@@ -9,6 +9,10 @@ html, body {
     margin: 0;
 }
 
+section {
+    padding: 64px 128px;
+}
+
 /* header section */
 
 #header {
@@ -43,3 +47,60 @@ nav > a:hover {
 }
 
 /* end header section */
+
+/* landing section */
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#landing h1 {
+    color: #2d2e32;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+#landing p {
+    margin-bottom: 32px;
+    color: #555555;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+#landing .btn-group-landing {
+    margin-top: 35px;
+}
+
+#landing a {
+    text-decoration: none;
+    color: #2d2e32;
+    font-size: 24px;
+}
+
+#landing .btn {
+    background-color: #ffc108;
+    color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 24px;
+}
+
+#landing .btn-alt {
+    background-color: #ffffff;
+    color: #2d2e32;
+    margin-right: 16px;
+    border: 2px solid #ffc108;
+}
+
+#landing > div img {
+    width: 100%;
+}
+
+/* end landing section */
