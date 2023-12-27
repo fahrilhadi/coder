@@ -156,3 +156,86 @@ nav > a:hover {
 }
 
 /* end about section */
+
+/* service section */
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-header h1 {
+    position: relative;
+    color: #2d2e32;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+.service-header h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url("./images/accent1.svg");
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.service-header p {
+    color: #555555;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+.service-header a {
+    text-decoration: none;
+    color: #2d2e32;
+    font-size: 24px;
+}
+
+.service-header .btn {
+    background-color: #ffc108;
+    color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 24px;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+}
+
+.service-detail-item {
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-detail-item:hover {
+    transform: scale(1.15);
+}
+
+.service-detail-item img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.service-detail-item:hover img {
+    filter: grayscale(0);
+}
+
+.service-detail-item h2 {
+    padding: 0 16px;
+}
+
+.service-detail-item p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+/* end service section */
