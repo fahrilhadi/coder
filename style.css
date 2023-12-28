@@ -230,12 +230,140 @@ nav > a:hover {
 }
 
 .service-detail-item h2 {
+    color: #2d2e32;
     padding: 0 16px;
 }
 
 .service-detail-item p {
+    color: #555555;
     font-size: 16px;
     padding: 0 16px;
 }
 
 /* end service section */
+
+/* contact section */
+
+#contact h1 {
+    position: relative;
+    color: #2d2e32;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+#contact > h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url("./images/accent2.svg");
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+#contact p {
+    color: #555555;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+.contact-detail > div, .contact-detail > form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ffc108;
+    padding: 64px 32px;
+}
+
+form .tell-us {
+    color: #2d2e32;
+    font-size: 32px !important;
+    text-align: center;
+}
+
+form button {
+    border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas:    "name subject"
+                            "email phone"
+                            "message message";
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    color: #2d2e32;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #FFC108;
+}
+
+form .btn {
+    background-color: #ffc108;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px 24px;
+    border-radius: 24px;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* end contact section */
