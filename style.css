@@ -367,3 +367,37 @@ iframe {
 }
 
 /* end contact section */
+
+/* footer section */
+
+#footer {
+    padding: 16px 128px;
+    background-color: #ffc108;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+#footer p {
+    width: 50%;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 32px;
+}
+
+.social-icon img {
+    cursor: pointer;
+}
+
+/* end footer section */
